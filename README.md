@@ -5,6 +5,7 @@ Through the url
 The akamai website will have a url like this, which will change every day
 
 ![img.png](img.png)
+
 [akamai's url,change every day ]
 
 
@@ -18,7 +19,7 @@ Througt the sensor_data
 payload contains sensor_data
 
 ![img_1.png](img_1.png)
-![payload]
+
 
 
 ## **2.Analyze Akamai code and request data**
@@ -31,12 +32,10 @@ Akamai code is obfuscated and is impossible to read normally, but you can do thi
 before processing
 
 ![img_2.png](img_2.png)
-[before]
 
 after processing
 
 ![img_3.png](img_3.png)
-[after]
 
 
 
@@ -48,7 +47,6 @@ Akamai's request parameters are encrypted inside sensor_data, which is actually 
 sensor array:
 
 ![img_4.png](img_4.png)
-[sensor array]
 
 -
 Understand the information collected by the sensor_data array.It is necessary to know the meaning of each element in the array. This process requires reading the js code and knowing how the elements are collected. For example, the element after -100: userAgent + product + plguins number + product code + language + screen info + timestamp...
