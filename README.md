@@ -1,6 +1,5 @@
 ## **1.How do you know if your website is protected by akamai**
 
--
 Through the url
 The akamai website will have a url like this, which will change every day
 
@@ -8,13 +7,9 @@ The akamai website will have a url like this, which will change every day
 
 [akamai's url,change every day ]
 
-
-
--
 Through the cookie
 If the cookie contains _abck,bm_sz,bm_mi, bm_sv
 
--
 Througt the sensor_data
 payload contains sensor_data
 
@@ -26,7 +21,6 @@ payload contains sensor_data
 
 **1.Analyze akamai's js code for anti-obfuscation**
 
--
 Akamai code is obfuscated and is impossible to read normally, but you can do this by de-obfuscating, replacing variables, array expressions, etc. with plain text, and the code will be clear and easy to read after processing.
 
 before processing
@@ -41,14 +35,12 @@ after processing
 
 **2.Learn about the sensor_data environment array**
 
--
 Akamai's request parameters are encrypted inside sensor_data, which is actually a 58-length array that collects a lot of device, browser, and behavior information. Including userAgent, screen information, plug-in information, various event information, and so on.
 
 sensor array:
 
 ![img_4.png](img_4.png)
 
--
 Understand the information collected by the sensor_data array.It is necessary to know the meaning of each element in the array. This process requires reading the js code and knowing how the elements are collected. For example, the element after -100: userAgent + product + plguins number + product code + language + screen info + timestamp...
 -105: the value of the page input property
 
